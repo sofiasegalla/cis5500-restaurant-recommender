@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color: black;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @apply mx-auto max-w-7xl bg-gray-200;
+}
+
+h1 {
+    @apply text-5xl font-medium leading-tight tracking-tighter antialiased;
+}
+h2 {
+    @apply pb-4 font-sans text-3xl font-medium tracking-[-0.015em] antialiased;
+}
+h3 {
+    @apply pb-4 font-sans text-2xl font-medium leading-tight antialiased;
+}
+p {
+    @apply font-text max-w-prose pb-4 font-sans text-lg leading-[1.5] antialiased;
+}
+a {
+    @apply underline hover:text-blue-500 active:text-blue-700;
+}
+
+label {
+    @apply font-sans text-lg font-medium antialiased;
+}
+ul {
+    @apply max-w-xl list-disc pl-4;
+}
+ol {
+    @apply max-w-xl list-decimal pl-5;
+}
+li {
+    @apply pb-1 text-lg;
+}
+
+body {
+    margin: 0;
+    /* display: flex;
+  place-items: center; */
+    min-width: 320px;
+    min-height: 100vh;
+    @apply antialiased;
+}
+
+main {
+    @apply mx-4 mb-4 py-32 antialiased md:mx-12 md:mb-4;
+}
+
+@layer utilities {
+    .font-text {
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "rds_host": "databaes.chzkl3v9d0nb.us-east-1.rds.amazonaws.com",
+    "rds_port": "3306",
+    "rds_user": "admin",
+    "rds_password": "yummyfood",
+    "rds_db": "DATABAES",
+    "server_host": "localhost",
+    "server_port": "8080"
+}
